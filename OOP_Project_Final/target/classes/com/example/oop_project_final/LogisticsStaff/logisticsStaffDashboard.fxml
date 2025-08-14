@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="logisticsStaffBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_final.LogisticsStaff.LogisticsStaffDashboardController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="374.0" prefWidth="138.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#incomingPackageOA" prefHeight="41.0" prefWidth="138.0" text="Incoming Package" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#storePackageOA" prefHeight="41.0" prefWidth="138.0" text="Store Package" />
+            <Button layoutX="10.0" layoutY="52.0" mnemonicParsing="false" onAction="#organizePackageOA" prefHeight="36.0" prefWidth="138.0" text="Organize Package" />
+            <Button layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#damagedOrMissingOA" prefHeight="52.0" prefWidth="138.0" text="Damaged or Missing Package" wrapText="true" />
+            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#returnShipmentsOA" prefHeight="34.0" prefWidth="138.0" text="Return Shipments" />
+            <Button layoutX="10.0" layoutY="176.0" mnemonicParsing="false" onAction="#trackPKGMovementOA" prefHeight="41.0" prefWidth="138.0" text="Track PKG Movement" />
+            <Button layoutX="10.0" layoutY="218.0" mnemonicParsing="false" onAction="#storageSpaceOA" prefHeight="41.0" prefWidth="138.0" text="Storage Space" />
+            <Button layoutX="10.0" layoutY="260.0" mnemonicParsing="false" onAction="#coordinateWithDeliveryDriverOA" prefHeight="49.0" prefWidth="138.0" text="Coordinate With Delivery Driver" wrapText="true" />
+            <Button layoutX="10.0" layoutY="301.0" mnemonicParsing="false" onAction="#logOutOA" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: red;" text="Log Out" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="72.0" prefHeight="44.0" prefWidth="318.0" text="Logistics Staff Dashboard">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="logisticsStaffTA" layoutX="15.0" layoutY="69.0" prefHeight="282.0" prefWidth="431.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
