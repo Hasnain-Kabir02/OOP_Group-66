@@ -54,7 +54,7 @@ public class AssignDeliveryController {
     }
 
     // Create a StringConverter to convert a Staff object to a displayable string.
-staffComboBox.setConverter(new StringConverter<Staff>() {
+    staffComboBox.setConverter(new StringConverter<Staff>() {
         @Override
         public String toString(Staff Staff) {
             // Return the staff member's name to be displayed in the ComboBox.
