@@ -1,12 +1,9 @@
 package com.example.oop_project_final.LogisticsStaff;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
-public class IncomingPackage
+public class IncomingPackageController
 {
     @javafx.fxml.FXML
     private TextField weightTF;
@@ -30,7 +27,13 @@ public class IncomingPackage
     private ComboBox assignedWarehouseCB;
     @javafx.fxml.FXML
     private AnchorPane receiveDateDP;
+    @javafx.fxml.FXML
+    private DatePicker recieveDP;
 
     @javafx.fxml.FXML
     public void initialize() {
+        originCB.getItems().addAll("Dhaka", "CTG", "Khulna", "Rajshahi");
+        destinationCB.getItems().addAll("Dhaka", "CTG", "Khulna", "Rajshahi");
+        typeCB.getItems().addAll("Mail", "Parcel");
+        assignedWarehouseCB.getItems().addAll("Warehouse DHK", "Warehouse CTG", "Warehouse KHL", "Warehouse RAJ" );
     }}

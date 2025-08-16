@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="receiveDateDP" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_final.LogisticsStaff.IncomingPackage">
+<AnchorPane fx:id="receiveDateDP" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_final.LogisticsStaff.IncomingPackageController">
    <children>
       <TextField fx:id="packageIDTF" layoutX="118.0" layoutY="43.0" />
       <Label layoutX="42.0" layoutY="47.0" text="Package ID:" />
@@ -20,7 +20,7 @@
       <Label layoutX="315.0" layoutY="47.0" text="Receive Date:" />
       <Label layoutX="315.0" layoutY="182.0" text="Assigned Warehouse:" />
       <Label fx:id="incomingStatusLabel" layoutX="144.0" layoutY="340.0" prefHeight="45.0" prefWidth="311.0" text="Status:" />
-      <DatePicker layoutX="409.0" layoutY="43.0" />
+      <DatePicker fx:id="recieveDP" layoutX="409.0" layoutY="43.0" />
       <TextField fx:id="receiverIDTF" layoutX="435.0" layoutY="87.0" />
       <TextField fx:id="weightTF" layoutX="117.0" layoutY="178.0" />
       <TextField fx:id="senderIDTF" layoutX="118.0" layoutY="87.0" />
